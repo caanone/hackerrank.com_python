@@ -1,6 +1,6 @@
 def print_full_name(*args):
 
-    print(f"Hello {args[0]} {args[1]}! You just delved into python.")
+    print(f"Hello {x for x in *args} ! You just delved into python.")
 
 
 if __name__ == '__main__':
