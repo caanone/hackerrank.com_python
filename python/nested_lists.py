@@ -7,13 +7,13 @@ class Student:
         self.score = score
         self.score_idx = -1
         self.name_idx = -1
-
+    @staticmethod
     def find_with_name_idx(st_list: list, name_idx: str):  # returns st score
         return (x.score for x in students if x.name_idx == name_idx)
-
+    @staticmethod
     def find_with_score_idx(st_list: list, score_idx: str):  # returns st name
         return (x.name for x in students if x.score_idx == score_idx)
-
+    @staticmethod
     def index_students(students):
         students.sort(key=lambda x: x.name)
         for idx, st in enumerate(students):
